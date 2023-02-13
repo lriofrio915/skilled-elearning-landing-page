@@ -1,15 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
-  --White: hsl(0, 0%, 100%);
-  --Light-gray: hsl(212, 45%, 89%);
-  --Grayish-blue: hsl(220, 15%, 55%);
-  --Dark-blue: hsl(218, 44%, 22%);
-  --outfit: 'Outfit';
+  --Light-purple: hsl(234, 25%, 52%);
+  --Dark-blue: hsl(233, 54%, 16%);
+  --Grayish: hsl(232, 10%, 56%);
+  --Light-red: hsl(341, 92%, 62%);
+  --Light-pink: hsl(341, 100%, 83%);
+  --White: hsl(0, 00%, 100%);
+  --orange-pink: linear-gradient(to bottom, #ff6f48, #f02aa6);
+  --purple-pink: linear-gradient(to bottom, #4851FF, #F02AA6); 
+  --jakarta: 'Plus Jakarta Sans', sans-serif;
 }
 
 body {
-  font-family: var(--outfit);
-  font-size: 15px;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+  font-family: var(--jakarta);
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px 0 16px;
+}
+
+nav {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 33px;
+}
+
+nav h2 {
+  color: var(--Dark-blue);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 35px;
+  align-self: center;
+}
+
+nav button {
+  background: var(--Dark-blue);
+  border-radius: 28px;
+  color: var(--White);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  width: 167px;
+  height: 56px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+header h1 {
+  color: var(--Dark-blue);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 50px;
+  margin-bottom: 33px;
+}
+
+header p {
+  color: var(--Grayish);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  margin-bottom: 33px;
+}
+
+header button {
+  background: var(--orange-pink);
+  border-radius: 28px;
+  color: var(--White);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  width: 167px;
+  height: 56px;
+  border: 0;
+  margin-bottom: 33px;
+  align-self: center;
+}
+
+header img {
+  margin: 0 8px 0 8px;
+  width: 327px;
+  height: 301px;
+}
+
+section h4 {
+  background: var(--orange-pink);
+  padding: 24px 29px 32px 28px;
+  border-radius: 10px;
+  color: var(--White);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.section__div {
+  margin-top: 16px;
+  padding: 0 29px 0 28px;
+}
+
+.section__div h3 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: var(--Dark-blue);
+}
+
+.section__div p {
+  margin-bottom: 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--Grayish);
+}
+
+.section__div button {
+  margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--Light-red);
+  border: 0;
+  background-color: var(--White);
+}
+
+footer {
+  display: flex;
+  justify-content:space-between;
+  background: var(--Dark-blue);
+  padding: 36px 16px 36px 16px;
+}
+
+footer h2 {
+  color: var(--White);
+  font-size: 28px;
+  font-weight: 800;
+  line-height: 35px;
+  align-self: center;
+}
+
+footer button {
+  background: var(--purple-pink);
+  border-radius: 28px;
+  border: 0;
+  color: var(--White);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  width: 167px;
+  height: 56px;
 }
